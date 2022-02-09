@@ -28,22 +28,21 @@
   .container-my-message {
     display: flex;
     justify-content: flex-end;
-    max-height: 40px;
   }
 
   .container-other-message {
     display: flex;
     justify-content: flex-start;
-    max-height: 40px;
   }
 
   .bubble-my-message {
     display: flex;
     align-items: center;
-    padding: 0 20px;
     background-color: #1982FC;
     border-radius: 50px;
+    padding: 0px 30px;
     max-width: 500px;
+
   }
 
   .bubble-other-message {
@@ -51,7 +50,7 @@
     align-items: center;
     background-color: #e9e9eb;
     border-radius: 50px;
-    padding: 0px 20px;
+    padding: 0 30px;
     max-width: 500px;
   }
 
@@ -64,8 +63,8 @@
   }
 
   img {
-    height: 100%;
-    margin-right: -40px;
+    max-height: 53px;
+    margin-right: 5px;
     clip-path: circle();
   }
 
