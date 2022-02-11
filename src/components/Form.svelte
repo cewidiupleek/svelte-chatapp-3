@@ -55,6 +55,7 @@
 <style>
   .form {
     padding: 5px 30px 30px;
+
   }
 
   .form__textbox {

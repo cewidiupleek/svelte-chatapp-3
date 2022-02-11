@@ -27,6 +27,7 @@
 	onAuthStateChanged(auth, (usr) => {
 		user = usr;
   });
+	
 </script>
 
 <main>

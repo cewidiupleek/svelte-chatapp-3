@@ -11,6 +11,8 @@
   afterUpdate(() => {
     if (autoscroll) div.scrollTo(0, div.scrollHeight);
   });
+
+
 </script>
 
 <div class="container" bind:this={div}>
@@ -30,6 +32,8 @@
     background: transparent;
 
   }
+
+  
 
   /* ------ scrolling ------ */
   ::-webkit-scrollbar {

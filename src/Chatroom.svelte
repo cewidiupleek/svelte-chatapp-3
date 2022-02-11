@@ -36,9 +36,10 @@
 	<Header {signout}/>
 	<MessageHistory>
 		{#each msgs as msg}
-			<Message {user} {msg}/>
+			<Message {msg} {user}/>
 		{/each}
 	</MessageHistory>
+
 	<Form {user} {colRef}/>
 
 </div>
