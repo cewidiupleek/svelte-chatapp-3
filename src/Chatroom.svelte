@@ -14,6 +14,8 @@
     getDoc, updateDoc
   } from 'firebase/firestore'
 
+	let userCount = 0;
+
 	// setup db
 	const db = getFirestore();
 	const colRef = collection(db, 'messages');
@@ -28,12 +30,23 @@
       messages.push({ ...doc.data(), id: doc.id })
     })
 		msgs = messages;
-  })
+
+		// counting number of unique IDs
+		let IDList = messages.map((x) => {
+        return x.uid;
+    });		
+
+		const countUnique = (iterable) => {
+			return new Set(iterable).size;
+		}
+
+		userCount = countUnique(IDList);
+  });
 	
 </script>
 
 <div class="chatroom">
-	<Header {signout}/>
+	<Header {signout} {userCount}/>
 	<MessageHistory>
 		{#each msgs as msg}
 			<Message {msg} {user}/>

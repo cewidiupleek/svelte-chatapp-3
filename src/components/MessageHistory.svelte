@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1; 
-    gap: 5px;
+    gap: 3px;
     padding: 0px 30px;
 		overflow: auto;
     position: relative;

@@ -1,5 +1,6 @@
 <script>
   export let signout;
+  export let userCount;
 </script>
 
 
@@ -7,7 +8,7 @@
   <h3>Cool Kids GC</h3>
   <div class="member-count">
     <i class="fas fa-user-friends"></i>
-    <p>3</p>
+    <p>{userCount}</p>
   <button on:click={signout}>Log out</button>
 </header>
 
