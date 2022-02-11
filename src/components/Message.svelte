@@ -57,7 +57,7 @@
 {/if}
 
 <style>
-    .container-my-message {
+  .container-my-message {
     display: flex;
     justify-content: flex-end;
   }
@@ -72,8 +72,8 @@
     align-items: center;
     background-color: #1982FC;
     border-radius: 25px;
-    padding: 0px 25px;
-    max-width: 40vw;
+    padding: 0px 20px;
+    max-width: 30vw;
   }
 
   .bubble-other-message {
@@ -81,8 +81,8 @@
     align-items: center;
     background-color: #e9e9eb;
     border-radius: 25px;
-    padding: 0 30px;
-    max-width: 40vw;
+    padding: 0 20px;
+    max-width: 30vw;
   }
 
   .text-my-message {
