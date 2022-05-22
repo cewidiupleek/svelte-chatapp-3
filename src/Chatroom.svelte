@@ -41,12 +41,14 @@
 		}
 
 		userCount = countUnique(IDList);
+
+
   });
 	
 </script>
 
 <div class="chatroom">
-	<Header {signout} {userCount}/>
+	<Header {signout} {userCount} {user}/>
 	<MessageHistory>
 		{#each msgs as msg}
 			<Message {msg} {user}/>

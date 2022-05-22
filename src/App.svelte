@@ -18,6 +18,7 @@
 
 	const login = () => {
 		signInWithPopup(auth, provider)
+		console.log("hi");
 	}
 
 	const signout = () => {

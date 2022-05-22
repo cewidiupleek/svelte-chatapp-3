@@ -1,15 +1,19 @@
 <script>
   export let signout;
   export let userCount;
+  export let user;
+
+  const firstName = user.displayName.split(' ')[0]
 </script>
 
 
 <header>
-  <h3>Cool Kids GC</h3>
+  <h3>Cool Kids GC </h3>
   <div class="member-count">
     <i class="fas fa-user-friends"></i>
     <p>{userCount}</p>
-  <button on:click={signout}>Log out</button>
+  <p>Logged in as <strong>{firstName}</strong></p>
+  <button class="signout-button" on:click={signout}>Log out</button>
 </header>
 
 
@@ -34,7 +38,13 @@
     color: grey;
   }
 
-  button {
+  .info-button {
+    border-radius: 50px;
+  }
+
+
+
+  .signout-button {
     margin-left: 30px;
     border-radius: 50px;
     color: white;
@@ -46,7 +56,7 @@
 
   }
 
-  button:hover {
+  .signout-button:hover {
     color: #1982FC;
     background-color: white;
     border: 2px solid #1982FC;
